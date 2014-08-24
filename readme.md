@@ -16,18 +16,18 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 The tidy data set was created from an R script called run_analysis.R that does the following. 
 
 1)	Merges the training and the test sets to create one data set.<br>
-..* Read in the training data, training subjects, and training labels.  Combined the training data, training subjects, and training labels to be one table.  (trainData table: 7352 x 563)
-..* Read in the test data, test subjects, and test labels.  Combined the test data, test subjects, and test labels to be the second table  (testData table: 2947 x 563)
-..* Combined the training data and test data tables to be one table called 'completeData'.  Because there are multiple columns called V1 and V2, I changed the appropriate columns of subject and activity to be 'Subject' and 'Act' respectively.  (completeData table: 10299 x 563)
+- Read in the training data, training subjects, and training labels.  Combined the training data, training subjects, and training labels to be one table.  (trainData table: 7352 x 563)
+- Read in the test data, test subjects, and test labels.  Combined the test data, test subjects, and test labels to be the second table  (testData table: 2947 x 563)
+- Combined the training data and test data tables to be one table called 'completeData'.  Because there are multiple columns called V1 and V2, I changed the appropriate columns of subject and activity to be 'Subject' and 'Act' respectively.  (completeData table: 10299 x 563)
 
 2)	Extracts only the measurements on the mean and standard deviation for each measurement.<br>
-..* Extracted any columns with mean, standard deviation, or mean Frequency by grep those elements from the features table and using this to extract those columns from the completedData table to create a new table called completeData2.  (msfeatures table: 79 x 2 and completedData2 table: 10299 x 81)
+- Extracted any columns with mean, standard deviation, or mean Frequency by grep those elements from the features table and using this to extract those columns from the completedData table to create a new table called completeData2.  (msfeatures table: 79 x 2 and completedData2 table: 10299 x 81)
 
 3)	Uses descriptive activity names to name the activities in the data set<br>
-..* Read in the features table, which will be used to rename the columns in the combined data set.  (features table: 561 x 2)
+- Read in the features table, which will be used to rename the columns in the combined data set.  (features table: 561 x 2)
 
 4)	Appropriately labels the data set with descriptive variable names.<br>
-..* Renamed and replaced column names in the completeData2 table by using the features name list and removing any non-letters, but leaving some upper case letters for readability. (10299 x 81 table)
+- Renamed and replaced column names in the completeData2 table by using the features name list and removing any non-letters, but leaving some upper case letters for readability. (10299 x 81 table)
 
 5)	Creates a second, independent tidy data set with the average of each variable for each activity and each subject.<br>
-..* The final data set includes data that calculates the average of each variable for each activity and each subject.  (Final data set is a table: 180 x 81)
+* The final data set includes data that calculates the average of each variable for each activity and each subject.  (Final data set is a table: 180 x 81)

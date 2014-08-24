@@ -31,3 +31,9 @@ The tidy data set was created from an R script called run_analysis.R that does t
 
 5)	Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 - The final data set includes data that calculates the average of each variable for each activity and each subject.  (Final data set is a table: 180 x 81)
+
+
+##The Scripts
+1. Download the data source and put into a folder on your local drive. Be sure to include a UCI HAR Dataset folder.
+2. Put run_analysis.R in the parent folder of UCI HAR Dataset and set the parent folder as your working directory in R using setwd() function.
+3. Run source("run_analysis.R"), which will produce the 'finalData.txt' in your working directory.

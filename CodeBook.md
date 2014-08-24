@@ -39,6 +39,7 @@ Variables names in the final tidy data set had any special characters removed.  
 ##NUMBER OF OBSERVATIONS AND NUMBER OF VARIABLES IN THE FINAL TIDY DATA SET
 
 Since there are 30 subjects and 6 activity levels (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING,  STANDING, LAYING), there is a total of 180 observations (30 x 6 = 180).  In addition, there are a total of  79 variables that measure the mean or standard deviations, resulting in a final data set of 180 rows by 81  variables (79 + 2 [subject number and activity]).
+
 Since any one subject may have completed more than one observation for each activity, the average of that  activity was calculated for each subject.  The final tidy data set contains the averages of each activity  performed by each subject.
 
 
@@ -129,17 +130,18 @@ fBodyBodyGyroJerkMagstd | fBodyBodyGyroJerkMag-std()	| numeric	| -1 to 1
 fBodyBodyGyroJerkMagmeanFreq | fBodyBodyGyroJerkMag-meanFreq()	| numeric	| -1 to 1	 
 
 Note:  All measured data is normalized and bounded within [-1, 1]
+
 The set of variables that were estimated from these signals are: 
--mean(): Mean value
--std(): Standard deviation
--meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+- mean(): Mean value
+- std(): Standard deviation
+- meanFreq(): Weighted average of the frequency components to obtain a mean frequency
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
--gravityMean
--tBodyAccMean
--tBodyAccJerkMean
--tBodyGyroMean
--tBodyGyroJerkMean
+- gravityMean
+- tBodyAccMean
+- tBodyAccJerkMean
+- tBodyGyroMean
+- tBodyGyroJerkMean
 
 
 

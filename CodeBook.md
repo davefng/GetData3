@@ -28,7 +28,7 @@ These signals were used to estimate variables of the feature vector for each pat
 - fBodyGyroMag
 - fBodyGyroJerkMag
 
-##SELECTION OF VARIABLES FOR THE FINAL TIDY DATA SET
+##SELECTION OF VARIABLES FOR THE FINAL TIDY DATA SETs
 
 The final tidy data set includes variables that account for the mean, standard deviation, and mean  frequencies.  The requirements were to find the mean and standard deviation for each measurement. The mean  frequencies were included because the mean frequencies are the Weighted average of the frequency  components, which is still a mean value.
 
@@ -38,7 +38,7 @@ Variables names in the final tidy data set had any special characters removed.  
 
 ##NUMBER OF OBSERVATIONS AND NUMBER OF VARIABLES IN THE FINAL TIDY DATA SET
 
-Since there are 30 subjects and 6 activity levels (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING,  STANDING, LAYING), there is a total of 180 observations (30 x 6 = 180).  In addition, there are a total of  79 variables that measure the mean or standard deviations, resulting in a final data set of 180 rows by 81  variables (79 + 2 [subject number and activity]).
+Since there are 30 subjects and 6 activity levels (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING,  STANDING, LAYING), there is a total of 180 observations (30 x 6 = 180).  In addition, there are a total of  79 variables that measure the mean, standard deviations, or mean frequencies, resulting in a final data set of 180 rows by 81  variables (79 + 2 [subject number and activity]).
 
 Since any one subject may have completed more than one observation for each activity, the average of that  activity was calculated for each subject.  The final tidy data set contains the averages of each activity  performed by each subject.
 
